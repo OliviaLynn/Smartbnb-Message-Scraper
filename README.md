@@ -25,13 +25,14 @@ pip install beautifulsoup4
 ```
 
 ### Running
-From your shell, run the command:
+- In `SmartbnbScraper.py`, consider making changes to `PAGES_PER_BATCH` and `START_SAVING_AFTER_PAGE` as desired.
+- From your shell, run the command:
 ```shell
 $ python SmartbnbScraper.py <smartbnb-username> <smartbnb-password>
 ```
 
 ## Output
-Outputs json of format (where `url` points each specific the message thread):
+- Outputs json of format (where `url` points each specific the message thread):
 ```yaml
 { data: [
           { url: ---,
@@ -53,3 +54,4 @@ Outputs json of format (where `url` points each specific the message thread):
         ]
 }
 ```
+- Several JSON files will be created, batching together however many inbox pages have been specified in `PAGES_PER_BATCH`. Each file name will be suffixed with the last (1-indexed) page included in its batch.
