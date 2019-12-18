@@ -61,7 +61,7 @@ PAGES_PER_BATCH = 10
 # Keep this a multiple of however many pages are in a save batch
 # Also, note there's no zero-indexing technically, but you can make this 0 because it will
 #   then start saving after 
-START_SAVING_AFTER_PAGE = 551
+START_SAVING_AFTER_PAGE = 0
 
 def run():    
     # Initialization
