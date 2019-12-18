@@ -1,7 +1,7 @@
 # Smartbnb Message Scraper
 <img src="https://img.shields.io/badge/python-3.7-blue" /> <img src="https://img.shields.io/badge/selenium-1.141.0-blue" /> <img src="https://img.shields.io/badge/maintained%3F-no-red" /> <img src="https://img.shields.io/github/issues/OliviaLynn/Smartbnb-Message-Scraper" /> 
 
- Scrapes all message data from Smartbnb.
+ Scrapes all message data from Smartbnb using Selenium.
 
 ## Getting Started
 
@@ -28,4 +28,28 @@ pip install beautifulsoup4
 From your shell, run the command:
 ```shell
 $ python SmartbnbScraper.py <smartbnb-username> <smartbnb-password>
+```
+
+## Output
+Outputs json of format (where `url` points each specific the message thread):
+```yaml
+{ data: [
+          { url: ---,
+            msgs: [ { author: host,
+                      message: ---- },
+                    { author: guest,
+                      message: ---- },
+                    { author: guest,
+                      message: ---- }
+                  ] },
+          { url: ---,
+            msgs: [ { author: host,
+                      message: ---- },
+                    { author: host,
+                      message: ---- },
+                    { author: guest,
+                      message: ---- }
+                  ] }
+        ]
+}
 ```
