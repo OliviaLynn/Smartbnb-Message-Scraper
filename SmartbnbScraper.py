@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 
-import ays, time, json
+import sys, time, json
 from bs4 import BeautifulSoup
 
 # SMARTBNB SCRAPER for python3
