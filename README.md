@@ -18,7 +18,7 @@ pip install selenium
 - Check what version of Chrome you're using (Chrome menu in the top right > Help > About Google Chrome)
 - The Selenium Chromedriver for your version of Chrome can be downloaded [here](https://chromedriver.chromium.org/downloads) (the one in this git is for version 78). Place this exe in the same directory as SmartbnbScraper.py
 
-#### Beautiful Soup (v4)
+#### Beautiful Soup (4.7.1)
 For parsing the html we scrape.
 ```shell
 pip install beautifulsoup4
