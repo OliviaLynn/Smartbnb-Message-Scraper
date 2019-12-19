@@ -9,7 +9,7 @@ These instructions will get the project up and running on your own machine with 
 
 ### Prerequisites
 
-#### Selenium (v1.141.0)
+#### Selenium (1.141.0)
 Our webscraper. Instructions assume you use Chrome, but you can substitute your preferred (selenium-supported) browser instead.
 - Install selenium via pip
 ```shell
